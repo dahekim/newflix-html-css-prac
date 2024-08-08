@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import "./global.css";
+
+html,
+body {
+    height: 100%;
+}
+
+.user-component {
+    padding: 20px 10px;
+    flex-direction: column;
+}
+
+.user-component__profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user-component__id {
+    padding-top: 0.3rem;
+    font-size: 1rem;
+}
+
+.add-profile-btn {
+    background-color: gray;
+    width: 70px;
+    height: 70px;
+    font-size: 4rem;
+    font-weight: 200;
+    color: white;
+}
+
+.coutinuing-list__imgs img {
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover; /* 가로-세로 비율 유지한 채로 지정한 크기 맞춤 */
+}
+
+.coutinuing-list {
+    margin-bottom: 25px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+.coutinuing-list__imgs {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+}
+
+.coutinuing-list__imgs::-webkit-scrollbar {
+    width: 10px;
+}
+.coutinuing-list__imgs::-webkit-scrollbar-thumb {
+    background-color:  var(--purple);
+    border-radius: 15px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.coutinuing-list__imgs::-webkit-scrollbar-track {
+    background-color: var(--darkpurple);
+    border-radius: 15px;
+}
+
+.coutinuing-list__card {
+    background-color: var(--darkpurple);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.coutinuing-list__header {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.coutinuing-list__imgs li {
+    margin-left: 10px;
+}
+
+.coutinuing-list__title {
+    display: block; /* 사진, 텍스트 사이 간격 조절 */
+    margin: 2px 0;
+}
+
+.wishlist {
+    padding: 0 20px 10px 20px;
+}
+
+.wishlist__header {
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.wishlist-item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkpurple);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+
+.wishlist-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px
+}
+
+.wishlist-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.wishlist__title {
+    font-size: 1.2rem;
+}
+
+.wishlist__subtitle {
+    font-size: 0.9rem;
+}
+
+.wishlist-play-btn span {
+    background-color: var(--purple);
+    border-radius: 50%;
+    opacity: 0.9;
+    font-size: 3rem;
+}

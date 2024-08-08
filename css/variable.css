@@ -1,0 +1,11 @@
+/*
+    사용자 지정 속성으로 자주 사용하는 속성 모두 저장
+    자주 사용하는 속성을 변수로 모아놓은 후 variable.css 로 만들고 
+    전체에 적용되도록 global.css 에 import
+*/
+:root {
+    --purple: #6644b8;
+    --darkpurple: #37274b;
+    --background-purple: #120522;
+    --border : rgba(225, 225, 225, 0.5);
+}
